@@ -24,8 +24,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import org.apache.geronimo.mail.james.mime4j.codec.QuotedPrintableOutputStream;
-
 /**
  * @version $Rev$ $Date$
  */
