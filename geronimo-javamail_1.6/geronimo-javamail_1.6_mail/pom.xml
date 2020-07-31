@@ -40,12 +40,12 @@
             <artifactId>geronimo-javamail_1.6_provider</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-javamail_1.5_spec</artifactId>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-activation_1.1_spec</artifactId>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -88,14 +88,14 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>org.apache.geronimo.specs:geronimo-javamail_1.5_spec</include>
+                                    <include>jakarta.mail:jakarta.mail-api</include>
                                     <include>org.apache.geronimo.javamail:geronimo-javamail_1.6_provider</include>
                                     <include>${project.groupId}:${project.artifactId}</include>
                                 </includes>
                             </artifactSet>
                             <filters>
                                 <filter>
-                                    <artifact>org.apache.geronimo.specs:geronimo-javamail_1.5_spec</artifact>
+                                    <artifact>jakarta.mail:jakarta.mail-api</artifact>
                                     <!-- All of the class files need to be excluded to avoid bnd errors about split packages -->
                                     <excludes>
                                         <exclude>javax/**</exclude>
