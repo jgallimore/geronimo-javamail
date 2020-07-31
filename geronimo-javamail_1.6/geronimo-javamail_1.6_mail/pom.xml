@@ -41,7 +41,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-javamail_1.6_spec</artifactId>
+            <artifactId>geronimo-javamail_1.5_spec</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -88,14 +88,14 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>org.apache.geronimo.specs:geronimo-javamail_1.6_spec</include>
+                                    <include>org.apache.geronimo.specs:geronimo-javamail_1.5_spec</include>
                                     <include>org.apache.geronimo.javamail:geronimo-javamail_1.6_provider</include>
                                     <include>${project.groupId}:${project.artifactId}</include>
                                 </includes>
                             </artifactSet>
                             <filters>
                                 <filter>
-                                    <artifact>org.apache.geronimo.specs:geronimo-javamail_1.6_spec</artifact>
+                                    <artifact>org.apache.geronimo.specs:geronimo-javamail_1.5_spec</artifact>
                                     <!-- All of the class files need to be excluded to avoid bnd errors about split packages -->
                                     <excludes>
                                         <exclude>javax/**</exclude>
@@ -135,7 +135,7 @@
                             org.apache.geronimo.javamail.authentication
                         </Private-Package>
                         <Export-Package>
-                            javax.mail*;version=1.6,
+                            javax.mail*;version=1.5,
                             org.apache.geronimo.javamail.handlers*;version=1.6,
                             org.apache.geronimo.javamail.store*;version=1.6,
                             org.apache.geronimo.javamail.transport*;version=1.6,
